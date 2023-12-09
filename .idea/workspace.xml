@@ -4,14 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a86cde5-9bd9-4b49-a21a-fb9ded4e96fd" name="Changes" comment="appgym" />
+    <list default="true" id="0a86cde5-9bd9-4b49-a21a-fb9ded4e96fd" name="Changes" comment="separacion por capas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/appgym/logica/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "poeticstew40"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="04f6c277-bc75-4b7b-ae25-bbe5fd4a51a1" />
+        <option name="url" value="https://github.com/poeticstew40/appgym.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
@@ -31,8 +55,10 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702152836766</updated>
       <workItem from="1702152837616" duration="457000" />
-      <workItem from="1702153450953" duration="768000" />
+      <workItem from="1702153450953" duration="1506000" />
     </task>
     <task id="LOCAL-00001" summary="appgym">
       <option name="closed" value="true" />
@@ -92,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702153920214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="separacion por capas">
+      <option name="closed" value="true" />
+      <created>1702154450173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702154450173</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="appgym" />
-    <option name="LAST_COMMIT_MESSAGE" value="appgym" />
+    <MESSAGE value="separacion por capas" />
+    <option name="LAST_COMMIT_MESSAGE" value="separacion por capas" />
   </component>
 </project>
