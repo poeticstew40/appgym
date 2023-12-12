@@ -4,17 +4,17 @@ public class Persona {
 
     private int dni;
     private String nombre;
-    private String apelldo;
+    private String apellido;
     private String email;
     private int telefono;
 
     public Persona() {
     }
 
-    public Persona(int dni, String nombre, String apelldo, String email, int telefono) {
+    public Persona(int dni, String nombre, String apellido, String email, int telefono) {
         this.dni = dni;
         this.nombre = nombre;
-        this.apelldo = apelldo;
+        this.apellido = apellido;
         this.email = email;
         this.telefono = telefono;
     }
@@ -35,12 +35,12 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApelldo() {
-        return apelldo;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApelldo(String apelldo) {
-        this.apelldo = apelldo;
+    public void setApellido(String apelldo) {
+        this.apellido = apelldo;
     }
 
     public String getEmail() {

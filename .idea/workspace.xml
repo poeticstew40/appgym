@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a86cde5-9bd9-4b49-a21a-fb9ded4e96fd" name="Changes" comment="separacion por capas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appgym/logica/Persona.java" afterDir="false" />
+    <list default="true" id="0a86cde5-9bd9-4b49-a21a-fb9ded4e96fd" name="Changes" comment="creacion clase persona">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/appgym/igu/Principal.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/appgym/igu/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appgym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appgym/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appgym/logica/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appgym/logica/Persona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +25,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="nicolas &lt;nicolas_gigena@hotmail.es&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "poeticstew40"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;poeticstew40&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -37,10 +46,10 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ZJv8EKEd8A34TOrmV1jZvHxZ3Y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,6 +65,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "254",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -69,6 +79,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,7 +119,9 @@
       <option name="presentableId" value="Default" />
       <updated>1702152836766</updated>
       <workItem from="1702152837616" duration="457000" />
-      <workItem from="1702153450953" duration="1506000" />
+      <workItem from="1702153450953" duration="4039000" />
+      <workItem from="1702176143136" duration="2917000" />
+      <workItem from="1702222710918" duration="3773000" />
     </task>
     <task id="LOCAL-00001" summary="appgym">
       <option name="closed" value="true" />
@@ -126,7 +139,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702154450173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creacion calse persona">
+      <option name="closed" value="true" />
+      <created>1702155205231</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702155205231</updated>
+    </task>
+    <task id="LOCAL-00004" summary="creacion clase persona">
+      <option name="closed" value="true" />
+      <created>1702155261695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702155261695</updated>
+    </task>
+    <task id="LOCAL-00005" summary="creacion clase persona">
+      <option name="closed" value="true" />
+      <created>1702155269156</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702155269156</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +173,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="appgym" />
     <MESSAGE value="separacion por capas" />
-    <option name="LAST_COMMIT_MESSAGE" value="separacion por capas" />
+    <MESSAGE value="creacion calse persona" />
+    <MESSAGE value="creacion clase persona" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion clase persona" />
   </component>
 </project>
