@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.appgym.igu;
 
 /**
@@ -10,9 +6,7 @@ package com.appgym.igu;
  */
 public class Principal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Principal
-     */
+
     public Principal() {
         initComponents();
     }
@@ -33,9 +27,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
-        Inscribir = new javax.swing.JButton();
-        Consulta = new javax.swing.JButton();
-        Salir = new javax.swing.JButton();
+        btnInscribir = new javax.swing.JButton();
+        btnConsulta = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 600));
@@ -48,14 +43,17 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 235, 0));
 
-        Logo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/5eb3cb4bc8c459000443515c.png"))); // NOI18N
+        Logo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/LogoPrincipal.png"))); // NOI18N
 
-        Logo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/5eb3cb4bc8c459000443515c.png"))); // NOI18N
+        Logo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/LogoPrincipal.png"))); // NOI18N
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 58)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Gold's GYM");
+
+        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -80,66 +78,78 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(38, 38, 38))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(38, 38, 38))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46))))
         );
 
         Fondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 150));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        Inscribir.setBackground(new java.awt.Color(255, 255, 255));
-        Inscribir.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
-        Inscribir.setForeground(new java.awt.Color(255, 235, 0));
-        Inscribir.setText("Inscribir Nuevo Miembro");
-        Inscribir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Inscribir.addActionListener(new java.awt.event.ActionListener() {
+        btnInscribir.setBackground(new java.awt.Color(51, 51, 51));
+        btnInscribir.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
+        btnInscribir.setForeground(new java.awt.Color(255, 235, 0));
+        btnInscribir.setText("Inscribir Nuevo Miembro");
+        btnInscribir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnInscribir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InscribirActionPerformed(evt);
+                btnInscribirActionPerformed(evt);
             }
         });
 
-        Consulta.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
-        Consulta.setForeground(new java.awt.Color(255, 235, 0));
-        Consulta.setText("Consulta, Edicion y Baja");
-        Consulta.addActionListener(new java.awt.event.ActionListener() {
+        btnConsulta.setBackground(new java.awt.Color(51, 51, 51));
+        btnConsulta.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
+        btnConsulta.setForeground(new java.awt.Color(255, 235, 0));
+        btnConsulta.setText("Consulta, Edicion y Baja");
+        btnConsulta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnConsulta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConsultaActionPerformed(evt);
+                btnConsultaActionPerformed(evt);
             }
         });
 
-        Salir.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
-        Salir.setForeground(new java.awt.Color(255, 235, 0));
-        Salir.setText("Salir");
-        Salir.addActionListener(new java.awt.event.ActionListener() {
+        btnSalir.setBackground(new java.awt.Color(51, 51, 51));
+        btnSalir.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(255, 235, 0));
+        btnSalir.setText("Salir");
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalirActionPerformed(evt);
+                btnSalirActionPerformed(evt);
             }
         });
+
+        jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(285, 285, 285)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Consulta, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Inscribir, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(285, Short.MAX_VALUE))
+                .addGap(275, 275, 275)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnConsulta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnInscribir, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                    .addComponent(btnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(275, Short.MAX_VALUE))
+            .addComponent(jSeparator2)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(btnInscribir, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
-                .addComponent(Inscribir, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
-                .addComponent(Consulta, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(60, Short.MAX_VALUE))
         );
 
@@ -159,63 +169,31 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsultaActionPerformed
+    private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ConsultaActionPerformed
+    }//GEN-LAST:event_btnConsultaActionPerformed
 
-    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SalirActionPerformed
+    }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void InscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InscribirActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_InscribirActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Principal().setVisible(true);
-            }
-        });
-    }
+    private void btnInscribirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInscribirActionPerformed
+        Inscripcion inscripcion = new Inscripcion();
+        inscripcion.setVisible(true);
+        inscripcion.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnInscribirActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Consulta;
     private javax.swing.JPanel Fondo;
-    private javax.swing.JButton Inscribir;
     private javax.swing.JLabel Logo1;
     private javax.swing.JLabel Logo2;
-    private javax.swing.JButton Salir;
+    private javax.swing.JButton btnConsulta;
+    private javax.swing.JButton btnInscribir;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }

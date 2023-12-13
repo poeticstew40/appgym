@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.appgym.igu;
 
 /**
@@ -10,9 +7,7 @@ package com.appgym.igu;
  */
 public class Inscripcion extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Principal
-     */
+
     public Inscripcion() {
         initComponents();
     }
@@ -47,14 +42,14 @@ public class Inscripcion extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        btnAgregar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         Fondo.setBackground(new java.awt.Color(255, 255, 255));
-        Fondo.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        Fondo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Fondo.setMinimumSize(new java.awt.Dimension(400, 400));
         Fondo.setPreferredSize(new java.awt.Dimension(400, 400));
         Fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -189,28 +184,29 @@ public class Inscripcion extends javax.swing.JFrame {
         Fondo.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 190, 10));
         Fondo.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 190, 10));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 235, 0));
-        jButton1.setText("Limpiar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnLimpiar.setBackground(new java.awt.Color(51, 51, 51));
+        btnLimpiar.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 235, 0));
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnLimpiarActionPerformed(evt);
             }
         });
-        Fondo.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, -1, -1));
+        Fondo.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 80, 30));
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 235, 0));
-        jButton2.setText("Agregar");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregar.setBackground(new java.awt.Color(51, 51, 51));
+        btnAgregar.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(255, 235, 0));
+        btnAgregar.setText("Agregar");
+        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnAgregarActionPerformed(evt);
             }
         });
-        Fondo.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, -1, -1));
+        Fondo.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 80, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -230,49 +226,14 @@ public class Inscripcion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DNITextActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnAgregarActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Inscripcion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Inscripcion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Inscripcion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Inscripcion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Inscripcion().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Apellido;
@@ -287,8 +248,8 @@ public class Inscripcion extends javax.swing.JFrame {
     private javax.swing.JTextField NombreText;
     private javax.swing.JLabel Telefono;
     private javax.swing.JTextField TelefonoText;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnAgregar;
+    private javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
