@@ -1,7 +1,18 @@
 package com.appgym.logica;
 
-public class Persona {
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class Persona implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
+    
     private int dni;
     private String nombre;
     private String apellido;
@@ -11,12 +22,21 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(int dni, String nombre, String apellido, String email, int telefono) {
+    public Persona(int id, int dni, String nombre, String apellido, String email, int telefono) {
+        this.id = id;
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.telefono = telefono;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getDni() {
@@ -39,8 +59,8 @@ public class Persona {
         return apellido;
     }
 
-    public void setApellido(String apelldo) {
-        this.apellido = apelldo;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getEmail() {
