@@ -1,6 +1,8 @@
 package com.appgym.logica;
 
+import com.appgym.igu.Consulta;
 import com.appgym.persistencia.ControladoraPersistencia;
+import java.util.List;
 
 
 public class Controladora {
@@ -17,6 +19,12 @@ public class Controladora {
         persona.setTelefono(telefono);
         
         controlPersis.agregarPersona(persona);
+        
+    }
+
+    public List<Persona> traerPersona() {
+        
+       return controlPersis.traerPersona();
         
     }
     
