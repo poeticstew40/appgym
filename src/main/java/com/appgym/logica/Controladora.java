@@ -27,5 +27,12 @@ public class Controladora {
        return controlPersis.traerPersona();
         
     }
+
+
+    public void borrarPersona(int Id) {
+        
+        controlPersis.borrarPersona(Id);
+        
+    }
     
 }
