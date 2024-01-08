@@ -34,5 +34,23 @@ public class Controladora {
         controlPersis.borrarPersona(Id);
         
     }
+
+    public Persona traerPersona(int Id) {
+        
+        return controlPersis.traerPersona(Id);
+        
+    }
+
+    public void modificarPersona(Persona persona, int dni, String nombre, String apellido, String email, int telefono) {
+        
+        persona.setDni(dni);
+        persona.setNombre(nombre);
+        persona.setApellido(apellido);
+        persona.setEmail(email);
+        persona.setTelefono(telefono);
+        
+        controlPersis.modificarPersona(persona);
+        
+    }
     
 }

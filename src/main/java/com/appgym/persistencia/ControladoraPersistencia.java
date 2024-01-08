@@ -31,5 +31,21 @@ public class ControladoraPersistencia {
         }
         
     }
+
+    public Persona traerPersona(int Id) {
+        
+        return personaJpa.findPersona(Id);
+        
+    }
+
+    public void modificarPersona(Persona persona) {
+        
+        try {
+            personaJpa.edit(persona);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
     
 }
