@@ -1,6 +1,8 @@
 package com.appgym.igu;
 
 import com.appgym.logica.Controladora;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 
 public class Inscripcion extends javax.swing.JFrame {
@@ -240,9 +242,26 @@ public class Inscripcion extends javax.swing.JFrame {
         int telefono = Integer.parseInt(TelefonoText.getText());
         
         control.agregarPersona(dni, nombre, apellido, email, telefono);
+        
+        mostrarMensaje ("Persona agregada correctamente", "Info", "Inscripcion Exitosa");
+
+        this.dispose();
     }//GEN-LAST:event_btnAgregarActionPerformed
 
-
+         public void mostrarMensaje (String mensaje, String tipo, String titulo){
+        JOptionPane optionPane = new JOptionPane(mensaje);
+        if (tipo.equals("Info")) {
+                optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if (tipo.equals("Error")) {
+            optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
+        }
+        JDialog dialog = optionPane.createDialog(titulo);
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+        
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Apellido;
     private javax.swing.JTextField ApellidoText;
