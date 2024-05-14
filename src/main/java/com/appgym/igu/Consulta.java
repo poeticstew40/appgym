@@ -55,6 +55,7 @@ public class Consulta extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
+        tablaPersonas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tablaPersonas.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
         tablaPersonas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -117,6 +118,7 @@ public class Consulta extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Roboto Medium", 0, 50)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Consulta Miembros");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
