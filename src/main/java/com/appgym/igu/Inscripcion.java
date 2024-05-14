@@ -57,23 +57,18 @@ public class Inscripcion extends javax.swing.JFrame {
         Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/LogoInscripcion.png"))); // NOI18N
 
         DNI.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        DNI.setForeground(new java.awt.Color(0, 0, 0));
         DNI.setText("DNI");
 
         Nombre.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        Nombre.setForeground(new java.awt.Color(0, 0, 0));
         Nombre.setText("Nombre");
 
         Apellido.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        Apellido.setForeground(new java.awt.Color(0, 0, 0));
         Apellido.setText("Apellido");
 
         Email.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        Email.setForeground(new java.awt.Color(0, 0, 0));
         Email.setText("Email");
 
         Telefono.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        Telefono.setForeground(new java.awt.Color(0, 0, 0));
         Telefono.setText("Telefono");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -118,7 +113,6 @@ public class Inscripcion extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 235, 0));
 
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 22)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Inscripcion Nuevo Miembro");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -140,7 +134,6 @@ public class Inscripcion extends javax.swing.JFrame {
 
         Fondo.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 100));
 
-        DNIText.setBackground(new java.awt.Color(255, 255, 255));
         DNIText.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         DNIText.setText("Ingrese el DNI");
         DNIText.setBorder(null);
@@ -151,25 +144,21 @@ public class Inscripcion extends javax.swing.JFrame {
         });
         Fondo.add(DNIText, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 190, -1));
 
-        NombreText.setBackground(new java.awt.Color(255, 255, 255));
         NombreText.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         NombreText.setText("Ingrese el nombre");
         NombreText.setBorder(null);
         Fondo.add(NombreText, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 190, -1));
 
-        ApellidoText.setBackground(new java.awt.Color(255, 255, 255));
         ApellidoText.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         ApellidoText.setText("Ingrese el apellido");
         ApellidoText.setBorder(null);
         Fondo.add(ApellidoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 190, -1));
 
-        EmailText.setBackground(new java.awt.Color(255, 255, 255));
         EmailText.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         EmailText.setText("Ingrese el email");
         EmailText.setBorder(null);
         Fondo.add(EmailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 190, -1));
 
-        TelefonoText.setBackground(new java.awt.Color(255, 255, 255));
         TelefonoText.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         TelefonoText.setText("Ingrese el telefono");
         TelefonoText.setBorder(null);
@@ -185,25 +174,25 @@ public class Inscripcion extends javax.swing.JFrame {
         btnLimpiar.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         btnLimpiar.setForeground(new java.awt.Color(255, 235, 0));
         btnLimpiar.setText("Limpiar");
-        btnLimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLimpiarActionPerformed(evt);
             }
         });
-        Fondo.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 80, 30));
+        Fondo.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 80, 30));
 
         btnAgregar.setBackground(new java.awt.Color(51, 51, 51));
         btnAgregar.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         btnAgregar.setForeground(new java.awt.Color(255, 235, 0));
         btnAgregar.setText("Agregar");
-        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarActionPerformed(evt);
             }
         });
-        Fondo.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 80, 30));
+        Fondo.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 90, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
